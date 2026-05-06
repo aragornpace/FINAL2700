@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marco Alpajaro - Full-Stack Web Developer from Iloilo. Building fast and responsive web applications.">
   <title>Marco Alpajaro | Full-Stack Web Developer</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    body { 
+      font-family: system-ui, -apple-system, sans-serif; 
+    }
+    .hero-bg { 
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); 
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
-
   <section class="hero-bg min-h-screen flex items-center justify-center text-center px-6">
     <div class="max-w-3xl">
-      
       <div class="flex justify-center mb-6">
         <img src="profilepic.png" 
              alt="Marco Alpajaro" 
+             loading="lazy"
+             decoding="async"
              class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-emerald-400 shadow-2xl">
       </div>
 
@@ -36,7 +48,6 @@
     </div>
   </section>
 
-
   <section id="projects" class="py-20 px-6 bg-zinc-900">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
@@ -44,7 +55,11 @@
       <div class="grid md:grid-cols-3 gap-8">
         
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-            <img src="project1.png" alt="TaskFlow Screenshot" class="w-full h-52 object-cover">
+          <img src="project1.png" 
+               alt="TaskFlow Screenshot" 
+               loading="lazy"
+               decoding="async"
+               class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">TaskFlow - Task Manager</h3>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -61,7 +76,11 @@
         </div>
 
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-            <img src="project2.png" alt="WeatherWise Screenshot" class="w-full h-52 object-cover">
+          <img src="project2.png" 
+               alt="WeatherWise Screenshot" 
+               loading="lazy"
+               decoding="async"
+               class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">WeatherWise Dashboard</h3>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -78,7 +97,11 @@
         </div>
 
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-            <img src="project3.png" alt="ShopVista Screenshot" class="w-full h-52 object-cover">
+          <img src="project3.png" 
+               alt="ShopVista Screenshot" 
+               loading="lazy"
+               decoding="async"
+               class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">ShopVista - E-commerce Landing</h3>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -96,7 +119,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="py-20 px-6">
     <div class="max-w-4xl mx-auto">
@@ -124,7 +146,6 @@
       </div>
     </div>
   </section>
-
 
   <section id="contact" class="py-20 px-6 bg-zinc-900">
     <div class="max-w-xl mx-auto text-center">
