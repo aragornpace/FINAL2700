@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Marco Alpajaro - Full-Stack Web Developer from Iloilo. Building fast and responsive web applications.">
+  <meta name="description" content="Marco Alpajaro - Full-Stack Web Developer from Iloilo">
   <title>Marco Alpajaro | Full-Stack Web Developer</title>
   
+  <!-- Tailwind + Minimal CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
   <style>
-    body { 
-      font-family: system-ui, -apple-system, sans-serif; 
-    }
-    .hero-bg { 
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); 
-    }
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    
     img {
       max-width: 100%;
       height: auto;
@@ -30,8 +27,7 @@
       <div class="flex justify-center mb-6">
         <img src="profilepic.png" 
              alt="Marco Alpajaro" 
-             loading="lazy"
-             decoding="async"
+             loading="lazy" decoding="async"
              class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-emerald-400 shadow-2xl">
       </div>
 
@@ -41,7 +37,7 @@
         I build fast, responsive, and secure web applications that solve real problems. 
         From Iloilo, turning ideas into production-ready products.
       </p>
-      <div class="mt-10 flex gap-4 justify-center">
+      <div class="mt-10 flex gap-4 justify-center flex-wrap">
         <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-emerald-400 transition">View Projects</a>
         <a href="#contact" class="border border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition">Get In Touch</a>
       </div>
@@ -53,13 +49,8 @@
       <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
       
       <div class="grid md:grid-cols-3 gap-8">
-        
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-          <img src="project1.png" 
-               alt="TaskFlow Screenshot" 
-               loading="lazy"
-               decoding="async"
-               class="w-full h-52 object-cover">
+          <img src="project1.png" alt="TaskFlow" loading="lazy" decoding="async" class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">TaskFlow - Task Manager</h3>
             <div class="flex flex-wrap gap-2 mb-4">
@@ -67,53 +58,33 @@
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">JavaScript</span>
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">Tailwind</span>
             </div>
-            <p class="text-zinc-400 text-sm leading-relaxed">
-              Problem: Users struggle with task overload and losing track of daily work.<br><br>
-              Solution: Developed a clean, intuitive task manager with add, edit, delete, and persistence using localStorage. 
-              Includes dark mode and mobile-friendly design.
-            </p>
+            <p class="text-zinc-400 text-sm leading-relaxed">Problem: Users struggle with task overload.<br><br>Solution: Built intuitive task manager with persistence and dark mode.</p>
           </div>
         </div>
 
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-          <img src="project2.png" 
-               alt="WeatherWise Screenshot" 
-               loading="lazy"
-               decoding="async"
-               class="w-full h-52 object-cover">
+          <img src="project2.png" alt="WeatherWise" loading="lazy" decoding="async" class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">WeatherWise Dashboard</h3>
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">JavaScript</span>
-              <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">OpenWeather API</span>
+              <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">API</span>
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">Tailwind</span>
             </div>
-            <p class="text-zinc-400 text-sm leading-relaxed">
-              Problem: People need quick and accurate weather information at a glance.<br><br>
-              Solution: Built a real-time weather dashboard with city search, current conditions, 
-              and 7-day forecast using OpenWeather API. Fully responsive with clean UI.
-            </p>
+            <p class="text-zinc-400 text-sm leading-relaxed">Problem: Need quick weather info.<br><br>Solution: Real-time weather dashboard with 7-day forecast.</p>
           </div>
         </div>
 
         <div class="bg-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition">
-          <img src="project3.png" 
-               alt="ShopVista Screenshot" 
-               loading="lazy"
-               decoding="async"
-               class="w-full h-52 object-cover">
+          <img src="project3.png" alt="ShopVista" loading="lazy" decoding="async" class="w-full h-52 object-cover">
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-2">ShopVista - E-commerce Landing</h3>
+            <h3 class="text-2xl font-semibold mb-2">ShopVista - E-commerce</h3>
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">JavaScript</span>
               <span class="bg-zinc-700 text-xs px-3 py-1 rounded-full">Tailwind</span>
             </div>
-            <p class="text-zinc-400 text-sm leading-relaxed">
-              Problem: Fashion brands need modern, high-converting landing pages for mobile users.<br><br>
-              Solution: Created a sleek, animated e-commerce landing page with product showcase, 
-              testimonials, and smooth scrolling. Optimized for fast loading and conversions.
-            </p>
+            <p class="text-zinc-400 text-sm leading-relaxed">Problem: Need modern landing page.<br><br>Solution: High-converting responsive e-commerce landing page.</p>
           </div>
         </div>
       </div>
@@ -128,12 +99,11 @@
           <h3 class="text-2xl mb-6">Technical Skills</h3>
           <div class="flex flex-wrap gap-3">
             <span class="bg-zinc-800 px-5 py-3 rounded-xl">HTML5 / CSS3</span>
-            <span class="bg-zinc-800 px-5 py-3 rounded-xl">JavaScript (ES6+)</span>
+            <span class="bg-zinc-800 px-5 py-3 rounded-xl">JavaScript</span>
             <span class="bg-zinc-800 px-5 py-3 rounded-xl">Tailwind CSS</span>
             <span class="bg-zinc-800 px-5 py-3 rounded-xl">Git & GitHub</span>
             <span class="bg-zinc-800 px-5 py-3 rounded-xl">API Integration</span>
             <span class="bg-zinc-800 px-5 py-3 rounded-xl">Responsive Design</span>
-            <span class="bg-zinc-800 px-5 py-3 rounded-xl">Web Deployment</span>
           </div>
         </div>
         <div>
@@ -151,7 +121,7 @@
     <div class="max-w-xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-8">Let's Work Together</h2>
       <p class="text-lg text-zinc-300 mb-10">
-        I'm currently open to new opportunities and collaborations.<br>
+        I'm currently open to new opportunities.<br>
         Send me a message and I'll reply within 24 hours.
       </p>
       
@@ -159,11 +129,6 @@
          class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white text-xl font-semibold px-12 py-6 rounded-2xl transition">
         Send me an Email ✉️
       </a>
-      
-      <p class="mt-10 text-zinc-500">
-        Or reach out directly at:<br>
-        <span class="text-emerald-400">alpajaromarco6@gmail.com</span>
-      </p>
     </div>
   </section>
 
